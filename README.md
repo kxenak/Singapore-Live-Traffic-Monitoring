@@ -105,18 +105,6 @@ traffic-camera-analyzer/
 *   **`requirements.txt`:** Lists all the Python libraries needed to run the project.
 *  **`models/yolov8n.pt`:** The pre-trained YOLOv8 model.
 
-## Potential Improvements
-
-*   **Error Handling:**  Add more robust error handling (e.g., for network issues, website changes, invalid image data).
-*   **Configuration:**  Allow users to configure the update interval, target URL, and vehicle classes through a configuration file or environment variables.
-*   **Database Integration:** Store historical vehicle counts in a database (e.g., SQLite, PostgreSQL) for analysis and visualization.
-*   **User Authentication:**  Add user authentication if you want to restrict access to the web interface.
-*   **More Sophisticated UI:**  Use a JavaScript framework (e.g., React, Vue.js) for a more interactive and dynamic user interface.
-*   **Dockerization:** Containerize the application using Docker for easier deployment and portability.
-*   **Caching:** Implement caching for camera data to reduce the number of requests to the LTA website.
-* **Alerting:** implement alerting capabilities if the traffic passes a threshold.
-* **Logging**: implement better logging to assist in debugging.
-
 ## Contributing
 
 Contributions are welcome!  Please feel free to submit pull requests or open issues.

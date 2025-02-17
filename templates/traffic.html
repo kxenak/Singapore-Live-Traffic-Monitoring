@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Camera Monitor</title>
+    <meta http-equiv="refresh" content="300">
+    <style>
+        body { font-family: sans-serif; }
+        .location { margin: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .camera { margin: 10px; display: inline-block; text-align: center; border: 1px solid #eee; padding: 5px; border-radius: 3px;}
+        .counts { margin: 5px; font-weight: bold; }
+        img { max-width: 400px; height: auto; border: 1px solid #ddd; }
+        h1 { color: #333; }
+        h2 { color: #555; }
+    </style>
+</head>
+<body>
+    <h1>Traffic Camera Monitor</h1>
+    <p>Last Updated: {{ last_update }}</p>
+    {% for location in locations %}
+        <div class="location">
+            <h2>{{ location.name }}</h2>
+            {% for camera in camera_data[location.id] %}
+                <div class="camera">
+                    <img src="{{ url_for('static', filename=camera.image_filename) }}" alt="Traffic Camera Image">
+                    <p>{{ camera.description }}</p>
+                    <p>{{ camera.timestamp }}</p>
+                    <div class="counts">
+                        Total Vehicles: {{ camera.vehicle_counts.total }}<br>
+                        Cars: {{ camera.vehicle_counts.car }}<br>
+                        Motorcycles: {{ camera.vehicle_counts.motorcycle }}<br>
+                        Buses: {{ camera.vehicle_counts.bus }}<br>
+                        Trucks: {{ camera.vehicle_counts.truck }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</body>
+</html>

@@ -22,7 +22,7 @@ This project uses YOLOv8 (specifically a pre-trained `yolov8n.pt` model) to anal
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/traffic-camera-analyzer.git
+    git clone https://github.com/kxenak/singapore-live-traffic-monitoring.git
     cd traffic-camera-analyzer
     ```
 

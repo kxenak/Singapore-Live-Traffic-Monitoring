@@ -1,4 +1,4 @@
-# Traffic Camera Analyzer
+# Singapore Live Traffic Monitoring
 
 This project uses YOLOv8 (specifically a pre-trained `yolov8n.pt` model) to analyze live traffic camera feeds from the Singapore Land Transport Authority (LTA) website, detect vehicles, and display the counts on a simple web interface.  It's built with Flask and can be deployed locally or using ngrok for public access (primarily useful in Colab environments).
 

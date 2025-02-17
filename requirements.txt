@@ -1,0 +1,8 @@
+ultralytics
+opencv-python-headless
+beautifulsoup4
+Flask
+pyngrok
+requests
+numpy
+Pillow

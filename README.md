@@ -15,7 +15,7 @@ This project uses YOLOv8 (specifically a pre-trained `yolov8n.pt` model) to anal
 
 *   Python 3.7+
 *   The required Python packages (listed in `requirements.txt`).
-*   The YOLOv8 model file (`yolov8n.pt`).  You can download it from the official Ultralytics YOLOv8 releases, however, it's not `yolo11n.pt`, instead we download `yolov8n.pt` from this [link](https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt). Place the downloaded file in the `models/` directory.  *It's crucial to get the correct pre-trained model;  results will be inaccurate or the application may fail if the model is missing or incorrect.*
+*   The YOLOv8 model file (`yolov8n.pt`).  You can download `yolov8n.pt` from this [link](https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt). Place the downloaded file in the `models/` directory.  *It's crucial to get the correct pre-trained model;  results will be inaccurate or the application may fail if the model is missing or incorrect.*
 
 ## Installation
 
